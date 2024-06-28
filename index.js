@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 
 // Load environment variables from .env file
 dotenv.config();
-
+mongoose.set("strictQuery", true);
 // Connect to MongoDB Atlas using the URI from environment variables
 mongoose
   .connect(process.env.uri, {
