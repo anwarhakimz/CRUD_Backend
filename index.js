@@ -15,7 +15,8 @@ export const db = mongoose.connection;
 db.on("error", (error) => console.log(error));
 db.once("open", () => console.log("Database Connected..."));
 
-const PORT = 3000;
-web.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
+const port = process.env.PORT_URL;
+
+web.listen(port, () => {
+  console.log(`Server is running on http://localhost:${port}`);
 });
