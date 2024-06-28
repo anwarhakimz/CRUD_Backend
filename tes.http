@@ -1,0 +1,30 @@
+GET http://localhost:3000/users 
+
+###
+GET http://localhost:3000/users/667d814752962321d7a48819
+
+###
+
+POST http://localhost:3000/users 
+Content-Type: application/json
+
+{
+    "name":"jas",
+    "email":"tes@gmail.com",
+    "gender":"Male"
+}
+
+
+###
+
+PATCH http://localhost:3000/users/667d814752962321d7a48819
+Content-Type: application/json
+
+{
+    "name":"tes",
+    "email":"tes@gmail.com",
+    "gender":"Male"
+}
+
+###
+DELETE  http://localhost:3000/users/667d814752962321d7a48819
